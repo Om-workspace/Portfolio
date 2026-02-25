@@ -1,58 +1,48 @@
-# 🚀 Om Kithani | DevOps Engineer
+# 🚀 DevOps Portfolio – Full Stack Production Deployment
 
-> Building Reliable Infrastructure | Automating Deployments | Containerizing Everything
+## 📌 Overview
 
-## 👨‍💻 About Me
+This project is a production-style full-stack portfolio application built using:
 
-DevOps-focused engineer with hands-on production-style experience in:
+- React (Frontend)
+- Node.js + Express (Backend API)
+- PostgreSQL (Database)
+- Nginx (Reverse Proxy)
+- Docker & Docker Compose (Containerization)
 
-- Docker containerization
-- AWS EC2 cloud deployment
-- Linux system administration
-- Nginx reverse proxy configuration
-- Git version control workflows
+The application demonstrates real-world DevOps practices including multi-container architecture, reverse proxy configuration, environment-based configuration, and scalable deployment strategy.
 
-I focus on building infrastructure that is scalable, maintainable, and production-ready.
+---
 
-## 🛠 Tech Stack
+## 🏗 Architecture
 
-| Category | Tools |
-|----------|-------|
-| Cloud | AWS EC2 |
-| Containers | Docker |
-| Web Server | Nginx |
-| OS | Ubuntu Linux |
-| Version Control | Git & GitHub |
-| Scripting | Bash |
+User → Nginx → React → Node API → PostgreSQL
 
-## 📂 Projects
+All services are containerized and orchestrated using Docker Compose.
 
-### 🐳 Dockerized Web Application
-- Created Dockerfile for static web app
-- Built and pushed image
-- Ran container on EC2
-- Configured port mapping and container networking
+---
 
-### 🌐 Nginx Reverse Proxy Setup
-- Configured server blocks
-- Routed traffic to backend container
-- Managed service startup issues
-- Debugged systemd vs service conflicts in container environments
+## 🛠 Features
 
-### ☁️ AWS EC2 Deployment
-- Provisioned EC2 instance
-- Installed Docker & Nginx
-- Deployed containerized portfolio
-- Configured security groups and firewall rules
+- Dynamic project data served from backend
+- Contact form storing messages in PostgreSQL
+- Reverse proxy routing via Nginx
+- Environment variable configuration
+- Production-ready folder structure
 
-## 📈 Learning Roadmap
+---
 
-- CI/CD with GitHub Actions
+## 🚀 Deployment Strategy
+
+- Local development using Docker Compose
+- Production deployment on AWS EC2
+- Nginx reverse proxy for traffic management
+- HTTPS configuration (planned)
+
+---
+
+## 📈 Future Enhancements
+
+- CI/CD pipeline (GitHub Actions)
 - Infrastructure as Code (Terraform)
-- Kubernetes fundamentals
-- Monitoring & Logging systems
-
-## ⚡ Fun Fact
-
-I believe DevOps is not about tools — it's about ownership of the entire deployment lifecycle.
-hi
+- Monitoring & logging integration
