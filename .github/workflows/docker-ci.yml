@@ -27,11 +27,11 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: yourdockerhubusername/portfolio-backend:latest
+          tags: omkithani/portfolio-backend:latest
 
       - name: Build and Push Frontend
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
-          tags: yourdockerhubusername/portfolio-frontend:latest
+          tags: omkithani/portfolio-frontend:latest
